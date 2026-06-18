@@ -131,6 +131,10 @@
             Email : "harshit45665432678@gmail.com"
 
         };
+        localStorage.setItem('userInfo', JSON.stringify(userInfo));
+        
+        const saverUser = JSON.parse(localStorage.getItem('userInfo'));
+        console.log(saverUser.name);
         </script>
 </body>
 
